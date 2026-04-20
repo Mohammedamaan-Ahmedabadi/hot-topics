@@ -162,7 +162,44 @@ article img {
 footer {
   background: var(--primary);
   color: white;
-  padding: 2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* footer container */
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* footer text */
+footer p {
+  text-align: center; /* override global left align */
+  margin-bottom: 0.3rem;
+}
+
+/* SOCIAL LINKS WRAPPER */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* LINKS */
+.social a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.social a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 /* =========================
